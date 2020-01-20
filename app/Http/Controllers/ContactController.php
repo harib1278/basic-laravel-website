@@ -22,4 +22,11 @@ class ContactController extends Controller
       // Redirect the user back to the homepage via named route
       return redirect()->route('home')->with('success', 'Successfully submitted!');
     }
+
+    // Retrieve the messages from the messages table and send to a vieww
+    public function getMessages(){
+      $messages = Message::all();
+
+      return view('messages', ['messages' => $messages]);
+    }
 }
