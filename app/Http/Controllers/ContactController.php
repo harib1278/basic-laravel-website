@@ -20,6 +20,6 @@ class ContactController extends Controller
       $message->save();
 
       // Redirect the user back to the homepage via named route
-      return redirect()->route('home');
+      return redirect()->route('home')->with('success', 'Successfully submitted!');
     }
 }
