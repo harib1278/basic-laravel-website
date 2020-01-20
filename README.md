@@ -1,3 +1,16 @@
+## Project requirements:
+- PHP >= 7.2.0
+- BCMath PHP Extension
+- Ctype PHP Extension
+- JSON PHP Extension
+- Mbstring PHP Extension
+- OpenSSL PHP Extension
+- PDO PHP Extension
+ Tokenizer PHP Extension
+- XML PHP Extension
+ 
+Check out https://box.scotch.io/ for an easy to use preconfigured VM LAMP stack - as running this project on a vagrant build is recommended!!
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

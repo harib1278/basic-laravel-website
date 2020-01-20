@@ -24,8 +24,8 @@ class ContactRequest extends FormRequest
     public function rules()
     {
         return [
-            'name'  => 'required',
-            'email' => 'required|email',
+            'name'    => 'required',
+            'email'   => 'required|email',
             'subject' => 'required',
             'message' => 'required'
         ];
@@ -36,7 +36,6 @@ class ContactRequest extends FormRequest
     public function messages(){
       return [
         'name.required'    => 'You should fill in the name section',
-        //'email.required'   => 'You should fill in the email section',
         'subject.required' => 'You need to fill in the subject section',
         'message.required' => 'You need to fill in the message section'
       ];

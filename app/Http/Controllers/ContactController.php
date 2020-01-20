@@ -10,13 +10,13 @@ class ContactController extends Controller
 {
     // Take the request variables and send them to the model for saving
     public function submit(ContactRequest $request){
-      //dd($request->input('email'));
       $message = new Message();
       $message->name    = $request->input('name');
       $message->email   = $request->input('email');
       $message->subject = $request->input('subject');
       $message->message = $request->input('message');
 
+      // Save the submission to the messages table
       $message->save();
 
       // Redirect the user back to the homepage via named route
